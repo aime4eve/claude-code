@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun run:*)",
+      "Bash(powershell -Command \"Get-Command Expand-Archive\")",
+      "Bash(dir dist\\\\*.js /b)",
+      "Bash(sed -n '720,750p' dist/chunk-6hhere8a.js)",
+      "Bash(powershell -Command \"Get-Content dist/chunk-6hhere8a.js | Select-Object -Skip 719 -First 31\")",
+      "Bash(node dist/cli.js --version)",
+      "Bash(git stash:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(bun --version)",
+      "Bash(bun upgrade:*)",
+      "Bash(powershell -Command \"irm bun.sh/install.ps1 | iex\")",
+      "Bash(cmd.exe /c \"powershell -Command \\\\\"irm bun.sh/install.ps1 | iex\\\\\"\")",
+      "Bash(cmd.exe /c \"bun upgrade --version 1.3.11\")",
+      "Bash(npm install:*)",
+      "Bash(cmd.exe /c \"npm update -g bun\")",
+      "Bash(npm list:*)",
+      "Bash(npx bun@1.3.11 run build.ts)",
+      "Bash(grep -rl buddy --include=*.ts --include=*.tsx src/)",
+      "Bash(grep -n \"feature.*BUDDY\\\\|BUDDY.*feature\" src/*.ts src/**/*.ts)"
+    ]
+  }
+}

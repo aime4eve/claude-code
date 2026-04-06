@@ -10,11 +10,12 @@
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
+        "allowImportingTsExtensions": true,
         "types": ["bun"],
         "paths": {
             "src/*": ["./src/*"]
         }
     },
-    "include": ["src/**/*.ts", "src/**/*.tsx"],
+    "include": ["src/**/*.ts", "src/**/*.tsx", "*.ts"],
     "exclude": ["node_modules"]
 }

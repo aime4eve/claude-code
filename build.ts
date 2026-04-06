@@ -11,6 +11,7 @@ rmSync(outdir, { recursive: true, force: true })
 // Default features that match the official CLI build.
 // Additional features can be enabled via FEATURE_<NAME>=1 env vars.
 const DEFAULT_BUILD_FEATURES = [
+  'BUDDY',
   'AGENT_TRIGGERS_REMOTE',
   'CHICAGO_MCP',
   'VOICE_MODE',
